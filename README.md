@@ -35,58 +35,58 @@ View the **complete workflow demo**, including init, push, pull, issue managemen
 2️⃣ **Initialize your local repo with TrackIt:**                                            
    **node index.js init demoRepo**<br>
    ✅ This:<br>
-     💠Initializes a Git repository locally and on S3(like git init).<br>
-     💠Links your local repo to the demoRepo you created on TrackIt.<br>
-     💠Prepares it to sync with TrackIt and your S3 bucket.<br>
+           💠Initializes a Git repository locally and on S3(like git init).<br>
+           💠Links your local repo to the demoRepo you created on TrackIt.<br>
+           💠Prepares it to sync with TrackIt and your S3 bucket.<br>
 
 3️⃣ **Add files to your repo**<br>
     **node index.js add <FileName>**<br>
    ✅ This:<br>
-     💠Adds all your project files to the local staging area.<br>
-     💠Equivalent to git add ..<br>
+           💠Adds all your project files to the local staging area.<br>
+           💠Equivalent to git add ..<br>
 
 4️⃣ Commit your changes with a message<br>
     **node index.js commit <commit-message>**<br>
     ✅ This:<br>
-      💠Records a snapshot of your current project state with your commit message.<br>
-      💠Stores the commit time and date for tracking on TrackIt.<br>
-      💠quivalent to git commit -m "message".<br>
+            💠Records a snapshot of your current project state with your commit message.<br>
+            💠Stores the commit time and date for tracking on TrackIt.<br>
+            💠quivalent to git commit -m "message".<br>
 
 5️⃣ Push your project to TrackIt (and AWS S3)<br>
     **node index.js push**<br>
     ✅ This:<br>
-      💠Syncs your committed project files to your AWS S3 bucket securely.<br>
-      💠Updates the TrackIt dashboard with your commit message, timestamp, and file list.<br>
-      💠Allows you to view and download any files from TrackIt from anywhere.<br>
-      💠Equivalent to git push, but instead of GitHub, your files are securely stored in your private <br>
-          S3 storage.<br>
+            💠Syncs your committed project files to your AWS S3 bucket securely.<br>
+            💠Updates the TrackIt dashboard with your commit message, timestamp, and file list.<br>
+            💠Allows you to view and download any files from TrackIt from anywhere.<br>
+            💠Equivalent to git push, but instead of GitHub, your files are securely stored in your private <br>
+                S3 storage.<br>
 
 6️⃣ View your files and commit history on TrackIt<br>
     ✅ From the frontend:<br>
-      💠View all your commits with messages, dates, and times.<br>
-      💠Browse and download all types of files (code, PDFs, images, datasets).<br>
-      💠Manage your project remotely, ensuring your files are backed up.<br>
+            💠View all your commits with messages, dates, and times.<br>
+            💠Browse and download all types of files (code, PDFs, images, datasets).<br>
+            💠Manage your project remotely, ensuring your files are backed up.<br>
         
 7️⃣ Upload files directly via TrackIt<br>
       If you want to add files directly:<br>
-      💠Use the Upload feature on TrackIt’s frontend.<br>
-      💠Upload single or multiple files from your system.<br>
-      💠These files will be stored in your S3 bucket and linked to your project.<br>
+            💠Use the Upload feature on TrackIt’s frontend.<br>
+            💠Upload single or multiple files from your system.<br>
+            💠These files will be stored in your S3 bucket and linked to your project.<br>
 
 8️⃣ Pull files from TrackIt to your local system:<br>
   If you uploaded files via TrackIt and want them locally:<br>
   **node index.js pull <repository-Name>**<br>
   ✅ This:<br>
-     💠Fetches all files and updates from your TrackIt repo/S3 bucket.<br>
-     💠Syncs them to your local project folder.<br>
-     💠Equivalent to git pull, but using your S3 storage as the remote.<br>
+           💠Fetches all files and updates from your TrackIt repo/S3 bucket.<br>
+           💠Syncs them to your local project folder.<br>
+           💠Equivalent to git pull, but using your S3 storage as the remote.<br>
 
 🔄 Reverting a Commit in TrackIt<br>
   **node index.js revert <commmitId>**<br>
-      💠TrackIt also supports revert — you can undo any commit by just simply running this revert<br>
-        command with commit id (you can get commit id from frontend easily).<br>
-      💠You can use revert to safely roll back unwanted changes. The revert is recorded in your <br>
-        commit history and synced to S3 when you push again.<br>
+            💠TrackIt also supports revert — you can undo any commit by just simply running this revert<br>
+              command with commit id (you can get commit id from frontend easily).<br>
+            💠You can use revert to safely roll back unwanted changes. The revert is recorded in your <br>
+              commit history and synced to S3 when you push again.<br>
 
   🚀 Why Use TrackIt? <br>
 ✅ Git-like workflow: Use familiar init, add, commit, push, pull, and revert commands for version<br>
@@ -100,11 +100,11 @@ View the **complete workflow demo**, including init, push, pull, issue managemen
     dashboard.<br>
     
 ## 🛠️ Tech Stack
-💠**Frontend:** React.js (deployed on Vercel)<br>
-💠**Backend:** Node.js, Express.js (runs locally for CLI operations)<br>
-💠**Storage:** AWS S3<br>
-💠**Version Control:** Git CLI mimic via Node<br>
-💠**Deployment:** Vercel (frontend)<br>
+   💠**Frontend:** React.js (deployed on Vercel)<br>
+   💠**Backend:** Node.js, Express.js (runs locally for CLI operations)<br>
+   💠**Storage:** AWS S3<br>
+   💠**Version Control:** Git CLI mimic via Node<br>
+   💠**Deployment:** Vercel (frontend)<br>
 
 ## 🖥️ Local Setup<br>
 TrackIt requires backend CLI commands to be executed locally for security.<br>
@@ -118,14 +118,14 @@ TrackIt requires backend CLI commands to be executed locally for security.<br>
 3️⃣ Add your .env file with AWS credentials and bucket name.<br>
 
 4️⃣ Run your CLI commands:<br>
--node index.js init <repoName><br>
--node index.js add <fileName><br>
--node index.js commit "<commit-message>"<br>
--node index.js push<br>
--node index.js pull <repoName><br>
--node index.js revert <commitId><br>
+      -node index.js init <repoName><br>
+      -node index.js add <fileName><br>
+      -node index.js commit "<commit-message>"<br>
+      -node index.js push<br>
+      -node index.js pull <repoName><br>
+      -node index.js revert <commitId><br>
 
-📸 Project Screenshots
+📸**Project Screenshots**
 
 ### CLI Interface
 ![CLI Interface demonstrating all commands-1](screenshots/CLI-1.png)
@@ -137,6 +137,9 @@ TrackIt requires backend CLI commands to be executed locally for security.<br>
 
 ### Repository Display
 ![Repository Display](screenshots/RepoDisplay.png)
+
+### Repository Files Display
+![Repository Files Display](screenshots/Files.png)
 
 ### Issue Display
 ![Issue Display](screenshots/IssueDisplay.png)
