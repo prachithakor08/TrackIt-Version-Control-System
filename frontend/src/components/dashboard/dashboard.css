@@ -1,0 +1,197 @@
+#dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: #c9d1d9;
+    font-family: 'Segoe UI', sans-serif;
+}
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: stretch; /* ensures equal height across cards */
+}
+.repo-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1 1 250px;
+    max-width: 300px;
+    min-height: 250px; /* enforce consistent height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* pushes footer to bottom */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: transform 0.2s;
+    margin: 0.5rem;
+}
+/* Section Headings */
+.section-heading {
+    font-size: 2rem;
+    color: #d3dbe3;
+    margin: 1rem 0 0.5rem 0;
+    text-align: left;
+}
+/* Description Styling */
+.repo-description {
+    color: #ffffff;
+    font-size: 0.9rem;
+    flex-grow: 1; /* take available space to push footer down */
+    margin-bottom: 1rem; /* ensure spacing before footer */
+}
+
+/* Footer Styling */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto; 
+}
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem; /* adjust for spacing */
+    margin-top: 0.5rem;
+}
+ .event-card, .suggested-card {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1rem;
+    flex: 1 1 250px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 4px 12px rgba(16, 70, 79, 0.4);
+    transition: transform 0.2s;
+    margin: 0.5rem;
+}
+
+
+.repo-card:hover, .event-card:hover, .suggested-card:hover {
+    transform: translateY(-4px);
+}
+
+.repo-header, .event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.repo-header h4, .event-header h4 {
+    color: #fefefe;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.delete-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.75rem;
+}
+
+
+.delete-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #e74c3c;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.delete-icon:hover {
+    transform: scale(1.2);
+    color: #ef8377;
+}
+
+.search-input {
+    width: 90%;
+    max-width: 400px;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+/* Modal styling remains same */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #161b22;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #f85149;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background: #ff6f61;
+}
+
+.file-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.file-item {
+    background-color: #072435;
+    border: 1px solid #edf5ff;
+    border-radius: 6px;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.view-files-button {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    background-color: #1e490f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.view-files-button:hover {
+    background-color: #579c2e;
+}

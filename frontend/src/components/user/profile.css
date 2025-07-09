@@ -1,0 +1,131 @@
+.profile-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+    gap: 2rem;
+    padding: 2rem 1rem;
+    color: #c9d1d9;
+    max-width: 1200px;
+    margin: 4rem 7rem 2rem 14rem;
+}
+
+.user-profile-card {
+    background-color: #161b22;
+    border-radius: 16px;
+    padding: 2rem;
+    /* width: 100%; */
+    width: 800px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(135, 206, 235, 0.15);
+    position: relative;
+    /* margin-right: 4rem; */
+}
+
+.logout-btn-profile {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #161b22;
+    color: #758fa9;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.logout-btn-profile:hover {
+    background-color: #238636;
+    color: white;
+}
+
+.profile-image-wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, #87ceeb, #238636);
+    margin: 0 auto 1rem;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #0d1117;
+}
+
+.profile-username {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+}
+
+.profile-bio,
+.profile-email {
+    font-size: 0.9rem;
+    color: #8b949e;
+    margin: 0.2rem 0;
+}
+
+.follow-stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0.5rem 0;
+}
+
+.follow-btn {
+    background-color: #238636;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    transition: background-color 0.3s;
+}
+
+.follow-btn:hover {
+    background-color: #2ea043;
+}
+
+.tech-quote {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #87ceeb;
+    margin-top: 1rem;
+}
+
+.heatmap-section {
+    background-color: #161b22;
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    width: 800px;
+    /* width: 100%; */
+    text-align: center;
+    box-shadow: 0 0 15px rgba(135, 206, 235, 0.1);
+}
+
+.heatmap-heading {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #c9d1d9;
+}
+
+.loading-profile {
+    text-align: center;
+    margin-top: 3rem;
+    color: #c9d1d9;
+}
+
+@media (max-width: 768px) {
+    .profile-page-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}

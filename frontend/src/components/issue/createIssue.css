@@ -1,0 +1,65 @@
+.create-issue-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: #0d1117; /* GitHub dark background */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    color: #c9d1d9; /* GitHub dark foreground */
+}
+
+.create-issue-container h2 {
+    color: #f0f6fc; /* brighter heading */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.create-issue-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.create-issue-form input,
+.create-issue-form textarea {
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background-color: #161b22; /* dark input background */
+    color: #c9d1d9;
+    font-size: 1rem;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+.create-issue-form input:focus,
+.create-issue-form textarea:focus {
+    border-color: #58a6ff; /* blue border on focus */
+    box-shadow: 0 0 0 3px rgba(56, 139, 253, 0.3);
+    outline: none;
+}
+
+.create-issue-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.submit-issue-button {
+    padding: 0.8rem;
+    background-color: #238636; /* GitHub green */
+    color: #f0f6fc;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-issue-button:hover {
+    background-color: #2ea043;
+    transform: translateY(-2px);
+}
+
+.submit-issue-button:active {
+    background-color: #238636;
+    transform: translateY(0);
+}
