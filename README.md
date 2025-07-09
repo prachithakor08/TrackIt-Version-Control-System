@@ -125,4 +125,28 @@ TrackIt requires backend CLI commands to be executed locally for security.<br>
 -node index.js pull <repoName><br>
 -node index.js revert <commitId><br>
 
-📸 Screenshots<br>
+📸 Project Screenshots
+
+### CLI Interface
+![CLI Interface demonstrating all commands-1](screenshots/CLI-1.png)
+![CLI Interface demonstrating all commands](screenshots/CLI-2.png)
+![CLI Interface demonstrating all commands](screenshots/CLI-3.png)
+
+### Create Repository
+![Create Repository](screenshots/createRepo.png)
+
+### Repository Display
+![Repository Display](screenshots/RepoDisplay.png)
+
+### Issue Display
+![Issue Display](screenshots/IssueDisplay.png)
+
+### Profile Display
+![Profile Display](screenshots/ProfileDisplay.png)
+
+### S3 Storage Integration
+![S3 Storage](screenshots/S3-storage.png)
+
+### Suggested Repositories
+![Suggested Repositories](screenshots/suggestedRepo.png)
+
