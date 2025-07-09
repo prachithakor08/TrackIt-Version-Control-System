@@ -3,7 +3,7 @@ import { useRoutes, Navigate } from "react-router-dom";
 import Dashboard from "./components/dashboard/Dashboard";
 import Profile from "./components/user/Profile";
 import Login from "./components/auth/Login";
-import Signup from "./components/auth/Signup";
+import Signup from "./components/auth/SignUp";
 import ProtectedRoute from "./ProtectedRoutes";
 import { useAuth } from "./authContext";
 import CreateRepo from "./components/repo/CreateRepo";
