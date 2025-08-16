@@ -8,7 +8,7 @@
 
 > Deployed for UI/UX review (backend requires local execution for security)
 
-[🔗 View TrackIt Frontend on Vercel](track-it-version-control-system.vercel.app)
+[🔗 View TrackIt Frontend on Vercel](https://track-it-version-control-system.vercel.app/)
 
 ## 🎥 Demo Video
 
